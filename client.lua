@@ -16,9 +16,9 @@ local currentAnimIndex = 1
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(interval)
-        mp.game.invoke('0xF4F2C0D4EE209E20') -- Disable idle camera
-        mp.game.invoke('0x9E4CFFF989258472') -- Disable vehicle idle camera
+        Wait(interval) 
+        InvalidateIdleCam()
+        InvalidateVehicleIdleCam()
     end
 end)
 
