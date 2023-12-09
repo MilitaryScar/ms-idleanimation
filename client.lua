@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
 end)
 
 function CheckPlayerInput(playerPed)
-    if IsControlPressed(0, 32) or IsControlPressed(0, 33) or IsControlPressed(0, 34) or IsControlPressed(0, 35) then
+    if IsControlPressed(0, 32) or IsControlPressed(0, 33) or IsControlPressed(0, 34) or IsControlPressed(0, 35) then -- Checks if player is pressing W A S or D
         lastActionTime = GetGameTimer()
 
         if isIdlePlaying then
